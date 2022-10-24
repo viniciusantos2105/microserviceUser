@@ -22,6 +22,7 @@ public class MicroserviceApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		userRepository.saveAll(List.of(
-				new User(null, "Vinicius", "vinicius@email.com", "1234", 50.00)));
+				new User(null, "Vinicius", "vinicius@email.com", "1234", 50.00),
+				new User(null, "Camila", "camila@email.com", "1234", 100.00)));
 	}
 }
